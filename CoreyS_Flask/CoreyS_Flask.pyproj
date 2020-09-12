@@ -6,8 +6,7 @@
     <ProjectGuid>eaa3d448-5b2b-4b5d-96fa-d22750212cbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>runserver.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,12 +28,48 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="flaskblog\" />
-    <Folder Include="flaskblog\models\" />
+    <Folder Include="flaskblog\main\" />
+    <Folder Include="flaskblog\posts\" />
+    <Folder Include="flaskblog\users\" />
+    <Folder Include="flaskblog\static\profile_pics\" />
     <Folder Include="flaskblog\templates\" />
     <Folder Include="flaskblog\static\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="flaskblog\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskblog\main\routes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskblog\main\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskblog\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskblog\posts\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskblog\posts\routes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskblog\posts\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="flaskblog\routes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskblog\users\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskblog\users\routes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskblog\users\utils.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskblog\users\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="flaskblog\__init__.py">
@@ -46,6 +81,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="flaskblog\static\main.css" />
+    <Content Include="flaskblog\templates\about.html" />
+    <Content Include="flaskblog\templates\layout.html" />
+    <Content Include="flaskblog\templates\account.html" />
+    <Content Include="flaskblog\templates\home.html" />
+    <Content Include="flaskblog\templates\login.html" />
+    <Content Include="flaskblog\templates\post.html" />
+    <Content Include="flaskblog\templates\register.html" />
+    <Content Include="flaskblog\templates\create_post.html" />
+    <Content Include="flaskblog\templates\reset_request.html" />
+    <Content Include="flaskblog\templates\reset_token.html" />
+    <Content Include="flaskblog\templates\user_posts.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
